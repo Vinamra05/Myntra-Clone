@@ -237,6 +237,8 @@ header {
 
 .items-container {
     width: 80%;
+    display: flex;
+    flex-wrap: wrap;
     margin: 40px 10%;
 }
 .item-container {
@@ -378,4 +380,12 @@ a.action_container:link {
   @keyframes fadeout {
     from {top: 30px; opacity: 1;}
     to {top: 0; opacity: 0;}
+  }
+
+
+
+  @media screen and (max-width:750px) {
+    .items-container {
+        width: 100%;
+    }
   }
